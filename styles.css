@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+.container{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.row-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row-one .logo{
+    margin: 2rem;
+    margin-top: 3rem;
+}
+
+.row-one span{
+    font-size: 2rem;
+    font-family: 'Libre Franklin';
+}
+
+.row-one .light-text{
+    font-weight: 100;
+    color: grey;
+}
+
+.row-one .bold-text{
+    font-weight: 600;
+    color: black;
+}
+
+.row-one .black-text{
+    margin: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+.row-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+.row-two .email{
+    margin-top: 1rem;
+    width: 13rem;
+    padding: 1rem;
+    border-radius: 50px;
+    border: 1px solid hsl(223, 87%, 63%);
+}
+.email::placeholder{
+    color: hsl(223, 100%, 88%);
+}
+.row-two span{
+    margin: 0.5rem;
+    color: red;
+    font-style: italic;
+    font-size: small;
+    display: none;
+    height: 1.2rem; 
+}
+.row-two .form{
+    display: flex;
+    flex-direction: column;
+}
+.row-two button{
+    margin: 1rem 1rem;
+    width: 15rem;
+    padding: 1rem;
+    border-radius: 50px;
+    border: none;
+    color:#fff;
+    background-color: hsl(223, 87%, 63%);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.row-three {
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .row-three img {
+    width: 100%;
+    height: auto;
+    margin: 1rem;
+  }
+.row-four .social-logos img{
+    width: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.row-four{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.row-four span{
+    color: grey;
+    opacity: 0.6;
+}
+@media (min-width: 600px){
+    .container{
+        justify-content: center;
+        align-items: center;
+    }
+    .row-three img{
+        max-width: 50%; /* Adjust the max-width as needed */
+        height: auto;
+        margin: 0;       
+    }
+    .row-two{
+        flex-direction: row;
+        width: 35rem;
+    }
+    .row-two .email{
+        width: 20rem;
+        margin:0;
+    }
+    .row-two button{
+        margin: 1;
+        width: 10rem;
+    }
+}
